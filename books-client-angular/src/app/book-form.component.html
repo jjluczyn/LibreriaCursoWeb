@@ -1,0 +1,22 @@
+<div class="app-content">
+  <md-card>
+    <div class="centered">
+      <h2>Add the info for the new book.</h2>
+      <md-input-container class="input-width">
+        <input mdInput  placeholder="Title" [(ngModel)]='book.title'>
+      </md-input-container>
+      <p></p>
+      <md-input-container class="input-width">
+        <textarea mdInput placeholder="Description (you can resize this field)" [(ngModel)]='book.description'></textarea>
+      </md-input-container>
+    </div>
+    <div class="centered">
+      <button md-button (click)="addBook()">
+        <md-icon>add</md-icon><span color="secondary">Add Book</span>
+      </button>
+      <button md-button [routerLink]="['/books']">
+        <md-icon>view_list</md-icon><span color="secondary">Discard</span>
+      </button>
+    </div>
+  </md-card>
+</div>

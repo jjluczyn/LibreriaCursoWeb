@@ -1,0 +1,20 @@
+<div class="app-content">
+  <md-card>
+    <div class="centered">
+      <button md-button [routerLink]="['/bookadd']">
+        <md-icon>add</md-icon><span color="secondary">New Book</span>
+      </button>
+    </div>
+    <h2>Book List</h2>
+    <md-list>
+      <md-list-item *ngFor="let book of books">
+        <h2 class="booktitle" md-line> {{book.id}}: {{book.title}} </h2>
+        <div md-line>
+          <button md-button [routerLink]="['/book', book.id]">
+              <md-icon>book</md-icon><span color="secondary">Book Page</span>
+          </button>
+        </div>
+      </md-list-item>
+    </md-list>
+  </md-card>
+</div>

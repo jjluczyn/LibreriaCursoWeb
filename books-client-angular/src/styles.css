@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+.booktitle {
+    font-weight: bold;
+}
+
+.bookdesc {
+    font-style: italic;
+}
+
+.input-width{
+    width: 70%;
+}
+
+.info-width{
+    width: 70%;
+    margin: 2em auto;
+}
+
+md-list-item {
+    margin-top: 15px;
+}

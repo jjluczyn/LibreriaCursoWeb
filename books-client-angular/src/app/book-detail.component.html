@@ -1,0 +1,22 @@
+<div class="app-content">
+  <md-card>
+    <div *ngIf='book' class="centered">
+      <h2>Info for the book {{book.id}}</h2>
+      <p class="info-width"><span class="booktitle">Title:</span> {{book.title}}</p>
+
+      <p class="info-width"><span class="booktitle">Description:</span> {{book.description}}</p>
+
+      <div>
+        <button md-button (click)="deleteBook()">
+              <md-icon>delete</md-icon><span color="secondary">Delete book</span>
+        </button>
+        <button md-button [routerLink]="['/bookedit',book.id]">
+              <md-icon>create</md-icon><span color="secondary">Edit Book</span>
+        </button>
+        <button md-button [routerLink]="['/books']">
+          <md-icon>view_list</md-icon><span color="secondary">Back to List</span>
+        </button>
+      </div>
+    </div>
+  </md-card>
+</div>
