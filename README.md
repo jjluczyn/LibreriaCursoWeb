@@ -2,7 +2,7 @@
 
 
 ## Clone and Run
-To clone this repo and run the app (You will need Node.js) :
+To clone this repo and run the app (You will need Node.js (working with 7.9) ) :
 * Note that this will also download the Angular source code, which is not necessary to run the app.
 * Go to the folder you want to copy the repo.
 * 'git clone https://github.com/jjluczyn/LibreriaCursoWeb.git'
